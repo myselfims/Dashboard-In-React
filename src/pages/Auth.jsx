@@ -99,12 +99,13 @@ const Auth = () => {
                   value={values.email}
                   name="email"
                   type="email"
-                  className={`rounded-xl bg-[#F5F5F5] w-[356px] mt-2 mb-[21px] h-[43.91px] p-3 outline-none ${
+                  className={`rounded-xl bg-[#F5F5F5] w-[356px] mt-2 h-[43.91px] p-3 outline-none ${
                     errors.email ? "border-red-300 border-2" : null
                   }`}
                   onChange={handleChange}
                   onBlur={handleBlur}
                 />
+                <p className="text-red-400 mb-[21px]">{errors.email}</p>
               </div>
               <div>
                 <p>Password</p>
@@ -112,12 +113,13 @@ const Auth = () => {
                   value={values.password}
                   name="password"
                   type="password"
-                  className={`rounded-xl bg-[#F5F5F5] w-[356px] mt-2 mb-[21px] h-[43.91px] p-3 outline-none ${
+                  className={`rounded-xl bg-[#F5F5F5] w-[356px] mt-2  h-[43.91px] p-3 outline-none ${
                     errors.password ? "border-red-300 border-2" : null
                   }`}
                   onChange={handleChange}
                   onBlur={handleBlur}
                 />
+                <p className="text-red-400 mb-[21px]">{errors.password}</p>
               </div>
               <div className="flex w-full flex-col">
                 <a className="text-[#346BD4] mb-[21px]" href="">
