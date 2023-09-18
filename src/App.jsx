@@ -1,5 +1,5 @@
-import Auth from "./pages/auth"
-import Dashboard from "./pages/dashboard"
+import Auth from "./pages/Auth";
+import Dashboard from "./pages/dashboard";
 import {
   BrowserRouter as Router,
   Routes,
@@ -16,8 +16,6 @@ function App() {
       <Routes>
         <Route path='/' Component={Auth}/>
         <Route path='/dashboard' Component={Dashboard}/>
-        {/* <Auth/>
-        <Dashboard/> */}
 
       </Routes>
 
