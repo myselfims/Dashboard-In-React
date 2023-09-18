@@ -1,5 +1,5 @@
 import Auth from "./pages/Auth";
-import Dashboard from "./pages/dashboard";
+import Dashboard from "./pages/Dashboard";
 import {
   BrowserRouter as Router,
   Routes,
